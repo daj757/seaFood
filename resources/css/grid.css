@@ -135,7 +135,7 @@
  /* SECTIONS  ============================================================================= */
 
 .section {
-	
+	clear: both;
 	padding: 0px;
 	margin: 0px;
 }
@@ -162,6 +162,7 @@
 	float:left;
 	margin: 1% 0 1% 1.6%;
 }
+
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
 

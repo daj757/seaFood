@@ -9,6 +9,15 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content:".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 
 .main-text {
@@ -24,6 +33,7 @@ header {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 h1,
@@ -200,13 +210,16 @@ section {
 }
 
 /* How it works section */
-
+.section-steps {
+    background-size: cover;
+    background-color: rgba(221, 220, 230, 0.164);
+}
 
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
     max-width: 41%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .steps-box:last-child {
@@ -217,31 +230,150 @@ section {
 .app-screen {
     width: 110%;
 }
-.btn-app img:first-child {
-    height: 100px;
+.btn-app img {
+    height: 140px;
+    width: auto;
     margin-right: 10px;
+    padding: 0px;
+    margin-left: 150px;
+    margin-top: -45px;
+    
+    
 }
-.btn-app img:last-child {
-    height: 180px;
-}
+
+
 .steps {
     margin-bottom: 50px;
+}
+.steps:last-of-type {
+    margin-bottom: 80px;
 }
 .steps div {
     color: #f39c12;
     border: 2px solid #f39c12;
     display: inline-block;
     border-radius: 50%;
-    height: 55px;
-    width: 55px;
+    width: 45px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     float: left;
-    font-size: 150%;
+    font-size: 170%;
     margin-right: 20px;
    
 }
 
+/* Cities Section */
 
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color:#f39c12;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+/* Testimonails section */
+
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0 , .8), rgba(0,0,0,.8)), url("../images/background.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 45px;
+}
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display:block;
+}
+cite img {
+    width: auto;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: -3;
+}
+
+/* Pricing plan boxes */
+
+.section-plans {
+background-color: rgba(221, 220, 230, 0.164);
+background-size: cover;
+}
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px rgb(226, 219, 219);
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid rgb(156, 153, 153);
+}
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+.plan-box div:first-child {
+    background-color:rgba(253, 249, 249, 0.788);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    color: #f39c12;
+    font-weight: 100;
+    margin-top: 0px;
+}
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.price-per-meal {
+    font-size: 80%;
+}
+.plan-box ul {
+    list-style: none;
+}
+.plan-box ul li {
+    padding: 5px 0;
+}
+.plan-box ul span {
+    margin-left: 40px;
+}
 
 
