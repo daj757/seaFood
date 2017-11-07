@@ -18,6 +18,11 @@ html {
     visibility: hidden;
 }
 
+.main-text h1 span {
+    display: block;
+    text-align: center;
+}
+
 
 
 .main-text {
