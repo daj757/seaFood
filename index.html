@@ -11,11 +11,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
-    <!-- <script> $(document).ready(function() {$( '#fullpage').fullpage(); });</script> -->
-
     <title>Maria Elena Restaurant</title>
 </head>
 <div id="fullpage">
@@ -25,6 +20,7 @@
             <nav>
                 <div class="row">
                     <img class="logo" src="https://png.icons8.com/ship-wheel/dotty/92/ffffff" alt="logo">
+                    <img class="logo-black" src="https://png.icons8.com/ship-wheel/dotty/85/000000" alt="logo ship wheel">
                     <ul class="main-nav">
                         <li>
                             <a href="#dishes">Our dishes</a>
@@ -54,7 +50,7 @@
     <body>
 
         <div class="section">
-            <section class="features">
+            <section class="features js--features">
 
                 <div class="row">
                     <h2>We bring the party to you</h2>
@@ -408,7 +404,7 @@
                 <form method="POST" action="" class="contact-form">
                     <div class="row">
                         <div class="col span_1_of_3">
-                            <label for="name" >Name</label>
+                            <label for="name">Name</label>
                         </div>
                         <div class="col span_2_of_3">
                             <input id="name" type="text" name="name" placeholder="Your name" required>
@@ -428,11 +424,11 @@
                         </div>
                         <div class="col span_2_of_3">
                             <select name="find-us" id="find-us" selected>
-                            <option value="friends">Friends</option>
-                            <option value="search-engine">Search Engine</option>
-                            <option value="ad">Advertisement</option>
-                            <option value="other">Other</option>
-                        </select>
+                                <option value="friends">Friends</option>
+                                <option value="search-engine">Search Engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
@@ -444,21 +440,21 @@
                         </div>
                     </div>
                     <div class="row">
-                            <div class="col span_1_of_3">
-                                <label for="message" >Drop us a line</label>
-                            </div>
-                            <div class="col span_2_of_3">
-                                <textarea name="message" placeholder="Your message" id="message" ></textarea>
-                            </div>
+                        <div class="col span_1_of_3">
+                            <label for="message">Drop us a line</label>
                         </div>
-                        <div class="row">
-                                <div class="col span_1_of_3">
-                                    <label>&nbsp;</label>
-                                </div>
-                                <div class="col span_2_of_3">
-                                    <input type="submit" value="Send it!">
-                                </div>
-                            </div>
+                        <div class="col span_2_of_3">
+                            <textarea name="message" placeholder="Your message" id="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
 
                 </form>
 
@@ -466,35 +462,59 @@
         </div>
 </div>
 
-</body>
+
 <section class="end">
-<footer>
-    <div class="row">
-        <div class="col span_1_of_2">
-            <ul class="footer-nav">
-                <li><a href="a">About Us</a></li>
-                <li><a href="a">Blog</a></li>
-                <li><a href="a">IOS App</a></li>
-                <li><a href="a">Press</a></li>
-            </ul>
-        </div>
-        <div class="col span_1_of_2">
+    <footer>
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li>
+                        <a href="a">About Us</a>
+                    </li>
+                    <li>
+                        <a href="a">Blog</a>
+                    </li>
+                    <li>
+                        <a href="a">IOS App</a>
+                    </li>
+                    <li>
+                        <a href="a">Press</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col span_1_of_2">
                 <ul class="social-links">
-                        <li><i class="ion-social-twitter icon-small"></i></li>
-                        <li><i class="ion-social-facebook icon-small"></i></li>
-                        <li><i class="ion-social-instagram icon-small"></i></li>
-                        <li><i class="ion-social-googleplus icon-small"></i></li>
-                    </ul>
-        </div>
+                    <li>
+                        <i class="ion-social-twitter icon-small"></i>
+                    </li>
+                    <li>
+                        <i class="ion-social-facebook icon-small"></i>
+                    </li>
+                    <li>
+                        <i class="ion-social-instagram icon-small"></i>
+                    </li>
+                    <li>
+                        <i class="ion-social-googleplus icon-small"></i>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="row">
-            <p>Images provided by <a href="https://unsplash.com">UnSplash</a></p>
+            <p>Images provided by
+                <a href="https://unsplash.com">UnSplash</a>
+            </p>
             <p>Copyright &copy; Maria Elena 2017</p>
-            <p>Icons provided by <a href="https://icons8.com">Icons8</a></p>
+            <p>Icons provided by
+                <a href="https://icons8.com">Icons8</a>
+            </p>
         </div>
 
-    
-</footer>
+
+    </footer>
 </section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="resources/js/jquery.waypoints.min.js"></script>
+<script src="resources/js/main.js"></script>
+</body>
 
 </html>

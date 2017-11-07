@@ -1,17 +1,21 @@
-
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
-.clearfix {zoom: 1;}
+
+.clearfix {
+    zoom: 1;
+}
+
 .clearfix:after {
-    content:".";
+    content: ".";
     clear: both;
     display: block;
     height: 0;
@@ -23,8 +27,6 @@ html {
     text-align: center;
 }
 
-
-
 .main-text {
     position: absolute;
     width: 1140px;
@@ -34,7 +36,7 @@ html {
 }
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/main.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/main.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -46,24 +48,23 @@ h2,
 h3 {
     font-weight: 300;
     text-transform: uppercase;
-    
-   
 }
+
 h1 {
     font-size: 340%;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     word-spacing: 3px;
     letter-spacing: 1.2px;
-
 }
-h2{
+
+h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1.2px;
-
 }
+
 h2:after {
     display: block;
     height: 2px;
@@ -73,6 +74,7 @@ h2:after {
     width: 100px;
     margin-top: 30px;
 }
+
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
@@ -84,9 +86,11 @@ h3 {
     text-align: center;
     margin-left: 15%;
 }
+
 .features .long-copy {
     margin-bottom: 20px;
 }
+
 .btn:link,
 .btn:visited,
 input[type=submit] {
@@ -107,39 +111,77 @@ input[type=submit] {
     border-radius: 200px;
     color: white;
     border: 1px solid #f39c12;
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 
 .btn-ghost:link,
-.btn-ghost:visited{
+.btn-ghost:visited {
     border: 1px solid #f39c12;
     color: #f39c12;
 }
+
 .btn-full:hover,
 .btn-full:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    border: 1px solid #fcaa2f; 
+    border: 1px solid #fcaa2f;
 }
 
 .btn-ghost:hover,
-.btn-ghost:link:active{
-    color:white;
+.btn-ghost:link:active {
+    color: white;
 }
+
 .btn:hover,
 input[type=submit]:hover {
     background-color: #fcaa2f;
 }
+
 .logo {
     float: left;
     margin-top: 20px;
+}
+.logo-black {
+    float: left;
+    margin: 5px 0;
+    display: none;
+    height: 50px;
 
 }
+
 .main-nav {
     float: right;
     list-style: none;
     margin-top: 55px;
-   
+}
+
+/* sticky nav */
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(177, 174, 174);
+     
+}
+.sticky .main-nav {
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 15px 0;
+    color: black;
+    
+}
+.sticky .logo-black {
+    display: block;
+}
+.sticky .logo {
+    display: none;
 }
 
 .main-nav li {
@@ -164,13 +206,14 @@ input[type=submit]:hover {
 }
 
 section {
-    padding:80px 0;
-    clear:both;
+    padding: 80px 0;
+    clear: both;
 }
 
 .box {
     padding: .6%;
 }
+
 .box p {
     font-size: 90%;
     line-height: 145%;
@@ -182,22 +225,23 @@ section {
     color: #fcaa2f;
     margin-bottom: 15px;
 }
+
 .meals-showcase {
     width: 100%;
     list-style: none;
     padding: 0;
-
 }
+
 .meals-section {
-    padding:0;
+    padding: 0;
 }
 
 .meals-showcase li {
-    display:block;
+    display: block;
     float: left;
     width: 33.3333%;
-
 }
+
 .dish {
     width: 100%;
     margin: 0;
@@ -206,20 +250,21 @@ section {
 }
 
 .dish img {
-    
     opacity: 0.7;
     width: 100%;
     height: 325px;
     transform: scale(1.15);
     transition: opacity .5s transform .5s;
-
 }
+
 .dish img:hover {
     transform: scale(1.05);
     opacity: 1;
 }
 
+
 /* How it works section */
+
 .section-steps {
     background-size: cover;
     background-color: rgba(221, 220, 230, 0.164);
@@ -235,11 +280,12 @@ section {
 .steps-box:last-child {
     padding-left: 3%;
     margin-top: 70px;
-   
 }
+
 .app-screen {
     width: 110%;
 }
+
 .btn-app img {
     height: 140px;
     width: auto;
@@ -247,17 +293,16 @@ section {
     padding: 0px;
     margin-left: 150px;
     margin-top: -45px;
-    
-    
 }
-
 
 .steps {
     margin-bottom: 50px;
 }
+
 .steps:last-of-type {
     margin-bottom: 80px;
 }
+
 .steps div {
     color: #f39c12;
     border: 2px solid #f39c12;
@@ -269,8 +314,8 @@ section {
     float: left;
     font-size: 170%;
     margin-right: 20px;
-   
 }
+
 
 /* Cities Section */
 
@@ -283,11 +328,12 @@ section {
 .city-feature {
     margin-bottom: 5px;
 }
+
 .icon-small {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color:#f39c12;
+    color: #f39c12;
     font-size: 120%;
     line-height: 120%;
     vertical-align: middle;
@@ -295,16 +341,15 @@ section {
     margin-right: 10px;
 }
 
+
 /* Testimonails section */
 
-
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0 , .8), rgba(0,0,0,.8)), url("../images/background.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../images/background.jpg");
     background-size: cover;
     color: white;
     background-attachment: fixed;
 }
-
 
 blockquote {
     padding: 2%;
@@ -313,11 +358,13 @@ blockquote {
     position: relative;
     margin-top: 45px;
 }
+
 cite {
     font-size: 90%;
     margin-top: 25px;
-    display:block;
+    display: block;
 }
+
 cite img {
     width: auto;
     height: 35px;
@@ -325,6 +372,7 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
 blockquote:before {
     content: "\201C";
     font-size: 500%;
@@ -334,12 +382,14 @@ blockquote:before {
     left: -3;
 }
 
+
 /* Pricing plan boxes */
 
 .section-plans {
-background-color: rgba(221, 220, 230, 0.164);
-background-size: cover;
+    background-color: rgba(221, 220, 230, 0.164);
+    background-size: cover;
 }
+
 .plan-box {
     background-color: #fff;
     border-radius: 5px;
@@ -352,15 +402,18 @@ background-size: cover;
     padding: 15px;
     border-bottom: 1px solid rgb(156, 153, 153);
 }
+
 .plan-box div:last-child {
     text-align: center;
     border: 0;
 }
+
 .plan-box div:first-child {
-    background-color:rgba(253, 249, 249, 0.788);
+    background-color: rgba(253, 249, 249, 0.788);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
@@ -368,6 +421,7 @@ background-size: cover;
     font-weight: 100;
     margin-top: 0px;
 }
+
 .plan-price span {
     font-size: 30%;
     font-weight: 300;
@@ -376,15 +430,19 @@ background-size: cover;
 .price-per-meal {
     font-size: 80%;
 }
+
 .plan-box ul {
     list-style: none;
 }
+
 .plan-box ul li {
     padding: 5px 0;
 }
+
 .plan-box ul span {
     margin-left: 40px;
 }
+
 
 /* Contact Form  */
 
@@ -402,25 +460,31 @@ textarea {
     border-radius: 3px;
     border: 1px solid #ccc;
 }
+
 textarea {
     height: 100px;
 }
-input[type=checkbox]{
+
+input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
+
 *:focus {
-    outline:none;
+    outline: none;
 }
+
 
 /* FOOTER */
 
 footer {
     background-color: rgb(46, 43, 43);
 }
+
 .foot-nav {
     list-style: none;
     float: left;
 }
+
 .footer-nav li {
     display: inline-block;
     margin-right: 20px;
@@ -430,12 +494,14 @@ footer {
     list-style: none;
     float: right;
 }
+
 .social-links li {
     display: inline-block;
     margin-right: 20px;
 }
+
 a {
-    color:  #f39c12;
+    color: #f39c12;
     text-decoration: none;
 }
 
@@ -445,21 +511,120 @@ a {
 .social-links li a:visited {
     text-decoration: none;
     border: 0;
-
 }
+
 footer p {
     font-size: 70%;
     color: white;
     display: inline-block;
     margin-left: 10%;
-    
 }
+
 footer {
     height: 100%;
 }
+
 .end {
-    padding-bottom:0;
+    padding-bottom: 0;
     padding-top: 100px;
 }
 
 
+/* media queries */
+/* big tablets to small laptops */
+@media only screen and (max-width: 1200px) {
+    .main-text {
+        width: 100%;
+        padding: 0 2%;
+        margin-left: 25px;
+    }
+    .main-text h1 span {
+        display: inline-block;
+    }
+    .row {
+        padding: 0 2%;
+    }
+    
+    }
+    @media only screen and (max-width: 880px) {
+       .main-text h1 span {
+           display: none;
+       }
+        }
+/* small tablets to large tablets */
+
+@media only screen and (max-width: 1023px) {
+body {
+    font-size: 14px;
+}
+section {
+    padding: 50px 0;
+}
+.long-copy {
+    width: 80%;
+    margin-left: 10%;
+}
+.app-screen {
+    width: 130%;
+
+}
+.btn-app img {
+    height: 100px;
+    width: auto;
+    margin-right: 0px;
+    margin-top: -45px;
+    padding: 0;
+}
+.dish img {
+    width: 100%;
+    height: 240px;
+}
+}
+/* Small phones to small tablets */
+
+@media only screen and (max-width: 767px) {
+    .dish img {
+        width: 100%;
+        height: 180px;
+    }
+}
+/* Small phones */
+
+@media only screen and (max-width: 480px) {
+    .long-copy {
+        width: 100%;
+        margin: 0;
+       
+    }
+    .app-screen {
+        width: 230%;
+    
+    }
+    .dish img {
+        width: 100%;
+        height: 150px;
+    }
+    .contact-form {
+        width: 90%;
+        margin-right: 5%;
+    }
+    .social-links  {
+        float: left;
+        margin-left: 15%;
+    }
+    .footer-nav {
+       clear: both;
+       margin-left: 12%;
+    }
+
+footer p {
+    font-size: 60%;
+  
+ display:inline-block;
+}
+.main-nav {
+    display: none;
+}
+
+
+}
